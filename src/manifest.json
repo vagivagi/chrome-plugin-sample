@@ -1,0 +1,17 @@
+{
+  "name": "Send Request",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_title": "Click to show an alert"
+  },
+  "host_permissions": [
+    "http://www.yourwebsite.com/"
+  ],
+  "content_scripts": [
+   {
+     "matches": ["http://www.yourwebsite.com/"],
+     "js": ["jquery.js", "sendRequest.js"]
+   }
+ ]
+}
